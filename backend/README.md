@@ -101,6 +101,7 @@ We get the following response for the above query
   an application.conf file with a map containing roles and endpoints. Match the JWT token role with the one in the map for the relevant endpoint.
   Alternatively, we build our middleware/custom directives that will introduce role/authorisation/authentication/security annotations, e.g. Node and NestJS has Passport strategy, other frameworks have similar things.
 * We can use Auth0 or OAuth for token generation if a bespoke solution is a maintenance cost, and outsource roles and use "custom claims" with these 3rd party providers for more bespoke needs.
+* Rate limiting, query cost/complexity limits, batch filtering, depth limiting also need to be introduced, e.g graphQL armour equivalent functionality as appropriate.
 * Caching tokens in memory etc. 
 * Enable TLS support for the server, but ideally terminate at envoy or similar, and of course SSL certs client side.
 * Firewalls, Network security.
