@@ -1,0 +1,5 @@
+schema: "../backend/src/main/resources/schema.graphqls"   # or local schema file
+generates:
+  src/generated/graphql.ts:
+    plugins:
+      - typescript
